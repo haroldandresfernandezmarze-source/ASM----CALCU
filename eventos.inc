@@ -34,7 +34,7 @@ proc ProcesarComando uses ebx esi edi, hwnd,wparam,lparam
     ; --------------------
     ; ignorar mensajes que no son de botones de entrada
     ; --------------------
-    cmp eax,IDC_BTN_PORC
+    cmp eax,IDC_BTN_DIV
     jb .fin
     cmp eax,IDC_BTN_PUNTO
     ja .fin
@@ -225,8 +225,6 @@ proc BotonEsSimbolo
     je .si
     cmp al,'.'
     je .si
-    cmp al,'%'
-    je .si
     pop esi
     pop eax
     or  al,1        ; ZF=0
@@ -253,8 +251,6 @@ proc CaracterEsSimbolo
     cmp al,'/'
     je .si
     cmp al,'.'
-    je .si
-    cmp al,'%'
     je .si
     or  al,1
     ret

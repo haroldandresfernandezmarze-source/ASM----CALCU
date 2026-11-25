@@ -40,7 +40,7 @@ proc CrearControles hwnd
     ; --------------------
     invoke CreateWindowEx,0,ButtonClass,txtAC,   WS_CHILD or WS_VISIBLE or BS_PUSHBUTTON,  9, 84,52,32,[hwnd],IDC_BTN_AC,   [hInstance],0
     invoke CreateWindowEx,0,ButtonClass,txtBack, WS_CHILD or WS_VISIBLE or BS_PUSHBUTTON, 69, 84,52,32,[hwnd],IDC_BTN_BACK, [hInstance],0
-    invoke CreateWindowEx,0,ButtonClass,txtPorc, WS_CHILD or WS_VISIBLE or BS_PUSHBUTTON,129, 84,52,32,[hwnd],IDC_BTN_PORC, [hInstance],0
+    
     invoke CreateWindowEx,0,ButtonClass,txtDiv,  WS_CHILD or WS_VISIBLE or BS_PUSHBUTTON,189, 84,52,32,[hwnd],IDC_BTN_DIV,  [hInstance],0
 
     ; --------------------

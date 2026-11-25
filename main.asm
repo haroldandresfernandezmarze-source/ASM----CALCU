@@ -13,7 +13,6 @@ Vacio db '',0
 
 txtAC    db 'AC',0
 txtBack  db '<-',0
-txtPorc  db '%',0
 txtDiv   db '/',0
 
 txt7     db '7',0
